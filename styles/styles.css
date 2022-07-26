@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 50%;
+  background-image: url("../images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content-container {
+  width: 50%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 35px 25px;
+}
+
+.content-container h2 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  margin: 20px 0 20px;
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+}
+
+.content-container .product {
+  letter-spacing: 5px;
+}
+
+.content-container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: hsl(228, 12%, 48%);
+}
+
+.content-container .price {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.content-container .price .discount-price {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+}
+
+.content-container .price .base-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.content-container button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(158, 36%, 15%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.content-container button svg {
+  margin-right: 10px;
+}
+
+@media (max-width: 390px) {
+
+  .container {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image-container{
+    width: 100%;
+    background-image: url(../images/image-product-mobile.jpg);
+    height: 200px;
+  }
+
+  .content-container{
+    width: 100%;
+    padding: 20px;
+  }
+}
+
